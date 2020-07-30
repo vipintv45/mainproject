@@ -1,0 +1,41 @@
+<div class="card-header">
+    <h4>Add User</h4>
+</div>
+<div class="card"> 
+    <form (ngSubmit)="Addenum()" #enumform="ngForm" >
+        
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table">
+                    <tbody> 
+                        <tr>
+                            <td><label>Name</label></td>
+                            <td><input type="text" name="e_name" [(ngModel)]="enum1.name" required></td>
+                        </tr>
+                        <tr> 
+                           
+                            <td><label >Role</label></td>
+                            <td><input type="text" name="e_id" [(ngModel)]="enum1.role" value="user" required ></td>
+                        </tr>
+                        <tr>
+                            <td><label>Area</label></td>
+                            <td><input type="text"name="e_code" [(ngModel)]="enum1.area"required ></td>
+                        </tr>
+                        <tr>
+                            <td><label>Username</label></td>
+                            <td><input type="text" name="e_date" [(ngModel)]="enum1.username" required></td>
+                        </tr>
+                        <tr>
+                            <td><label>password</label></td>
+                            <td><input type="text" name="e_desc" [(ngModel)]="enum1.password" placeholder="min 6 characters"minlength="6" required></td>
+                        </tr> 
+                       
+                        <td></td>
+                        <td><input [disabled]="enumform.form.invalid" type="submit" value="Submit"></td>
+                        <!-- <td><button type="submit" class="btm">Submit123</button></td> -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </form>
+</div>

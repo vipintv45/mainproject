@@ -1,0 +1,47 @@
+
+<div class="card-header">
+    <h4>Survey List</h4>
+</div>
+
+
+
+<div class="card">
+    
+    <div class="class-body">
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                    <tr>
+                        
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>TC no</th>
+                        <th>Address</th>
+                        <th>Aadar</th>
+                        <th>Area code</th>
+                        <th>Description</th>
+                        
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor='let i of sur'>
+                        
+                        <td>{{i.name}}</td>
+                        <td>{{i.age}}</td>
+                        <td>{{i.tcno}}</td>
+                        <td>{{i.address}}</td>
+                        <td>{{i.aadar}}</td>
+                        <td>{{i.areacode}}</td>
+                        <td>{{i.description}}</td>
+                        <td><button class="button btn-primary" (click)="editenum(i)">edit</button></td> 
+                      
+                    </tr>
+ 
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+
+

@@ -1,0 +1,47 @@
+
+<div class="card"> 
+    <form (ngSubmit)="test()" >
+        
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <td><label>Name</label></td>
+                            <td><input type="text" name="e_name" [(ngModel)]="s.name" ></td>
+                        </tr>
+                        <tr> 
+                           
+                            <td><label >Age</label></td>
+                            <td><input type="number" name="e_age" [(ngModel)]="s.age" value="user" ></td>
+                        </tr>
+                        <tr>
+                            <td><label>TC no</label></td>
+                            <td><input type="text"name="e_tc" [(ngModel)]="s.tcno" ></td>
+                        </tr>
+                        <tr>
+                            <td><label>Address</label></td>
+                            <td><input type="text" name="e_address" [(ngModel)]="s.address" ></td>
+                        </tr>
+                        <tr>
+                            <td><label>Aadhar</label></td>
+                            <td><input type="number" name="e_aadar" [(ngModel)]="s.aadar"></td>
+                        </tr> 
+                        <tr>
+                            <td><label>Area code</label></td>
+                            <td><input type="text" name="e_areacode" [(ngModel)]="s.areacode"></td>
+                        </tr> 
+                        <tr>
+                            <td><label>Description</label></td>
+                            <td><input type="text" name="e_desc" [(ngModel)]="s.description"></td>
+                        </tr> 
+                       
+                        <td></td>
+                        <td><input type="submit" value="Submit"></td>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </form>
+</div>
+

@@ -1,0 +1,44 @@
+<div class="card-header">
+    <h3>User List</h3>
+</div>
+
+
+
+<div class="card">
+    
+    <div class="class-body">
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                    <tr>
+                        
+                        <th>Name</th>
+                        <th>Role</th>
+                        <th>Area</th>
+                        <th>Username</th>
+                        
+                        <th>Password</th>
+                        <th><button class="btn btn-primary" (click)="showbtn()">Edit/delete</button></th>
+                        
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor='let i of enum'>
+                        
+                        <td>{{i.name}}</td>
+                        <td>{{i.role}}</td>
+                        <td>{{i.area}}</td>
+                        <td>{{i.username}}</td>
+                        <td>{{i.password}}</td>
+                        <td><button *ngIf="show" class="btn btn-success"(click)="editenum(i)">edit</button>
+                            <button  *ngIf="show" class="btn btn-danger"(click)="deleteenum(i)">delete</button></td>
+                      
+                    </tr>
+ 
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <button (click)="addenum()" class="btn btn-primary">Add User</button>
+

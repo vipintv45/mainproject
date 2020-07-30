@@ -1,0 +1,48 @@
+<div class="card-header">
+    <h4>Add Survey</h4>
+</div>
+<div class="card"> 
+    <form (ngSubmit)="test()"#surform="ngForm" >
+        
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <td><label>Name</label></td>
+                            <td><input type="text" name="e_name" [(ngModel)]="s.name" required></td>
+                        </tr>
+                        <tr> 
+                           
+                            <td><label >Age</label></td>
+                            <td><input type="number" name="e_age" [(ngModel)]="s.age" value="user" required></td>
+                        </tr> 
+                        <tr>
+                            <td><label>TC no</label></td>
+                            <td><input type="text"name="e_tc" [(ngModel)]="s.tcno" required></td>
+                        </tr>
+                        <tr>
+                            <td><label>Address</label></td>
+                            <td><input type="text" name="e_address" [(ngModel)]="s.address" required></td>
+                        </tr>
+                        <tr>
+                            <td><label>Aadhar</label></td>
+                            <td><input type="text" name="e_aadar" [(ngModel)]="s.aadar" minlength="12" required placeholder="should be valid"></td>
+                        </tr> 
+                        <tr>
+                            <td><label>Area code</label></td>
+                            <td><input type="text" name="e_areacode" [(ngModel)]="s.areacode"   required></td>
+                        </tr> 
+                        <tr>
+                            <td><label>Description</label></td>
+                            <td><input type="text" name="e_desc" [(ngModel)]="s.description"></td>
+                        </tr> 
+                       
+                        <td></td>
+                        <td><input [disabled]="surform.form.invalid" class="btn btn-primary" type="submit" value="Submit"></td>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </form>
+</div>

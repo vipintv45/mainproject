@@ -1,0 +1,41 @@
+<div class="card-header">
+    <h4>Edit Enumerator</h4>
+</div>
+
+<div class="card"> 
+    <form (ngSubmit)="Editenum()" >
+        
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <td><label>Name</label></td>
+                            <td><input type="text" name="e_name" [(ngModel)]="enum1.name" ></td>
+                        </tr>
+                        <tr> 
+                           
+                            <td><label >Role</label></td>
+                            <td><input type="text" name="e_id" [(ngModel)]="enum1.role" value="user" ></td>
+                        </tr>
+                        <tr>
+                            <td><label>Area</label></td>
+                            <td><input type="text"name="e_area" [(ngModel)]="enum1.area" ></td>
+                        </tr>
+                        <tr>
+                            <td><label>Username</label></td>
+                            <td><input type="text" name="e_username" [(ngModel)]="enum1.username" ></td>
+                        </tr>
+                        <tr>
+                            <td><label>password</label></td>
+                            <td><input type="text" name="e_password" [(ngModel)]="enum1.password"></td>
+                        </tr> 
+                       
+                        <td></td>
+                        <td><input type="submit" value="Submit"></td>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </form>
+</div>
