@@ -10,7 +10,7 @@ user username   :user
 user password   :user
 
 
-admin privileges :add,edit,delete users
+admin privileges :add,edit,delete users,
 		  view report and delete census data
 
 user privileges  :add,edit and view census data
